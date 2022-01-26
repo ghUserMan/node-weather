@@ -28,9 +28,8 @@ C:\WORK\node\the-complete-node-js\web-server>
 -----------------
 C:\WORK\node\the-complete-node-js\web-server>heroku login
 heroku: Press any key to open up the browser to login or q to exit:
-Opening browser to https://cli-auth.heroku.com/auth/cli/browser/df2998ae-8fc1-42ed-a336-0cc51dbeb7c5?requestor=SFMyNTY.g2gDbQAAAAw5NS4zMS4xNjAuMTVuBgCQPbCYfgFiAAFRgA.aeDWSPnlHCFiP49Ip90MequzxeQc8LRmwYqXx3DSCHA
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/d
 Logging in... done
-Logged in as apatiy.kirov@yandex.ru
 
 C:\WORK\node\the-complete-node-js\web-server>heroku keys:add
 Found an SSH public key at C:\Users\whoy\.ssh\id_rsa.pub
