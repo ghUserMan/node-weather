@@ -73,6 +73,7 @@ app.get('/weather', (req, res) => {
 })
 
 app.get('/products', (req, res) => {
+    // получен еипараметра из запроса
     if (!req.query.search) {
         return res.send({
             error: 'You must provide a search term'
@@ -101,6 +102,8 @@ app.get('*', (req, res) => {
     })
 })
 
+
+// запуск сервера express
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
