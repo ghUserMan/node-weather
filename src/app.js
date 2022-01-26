@@ -7,7 +7,9 @@ const forecast = require('./utils/forecast')
 //https://puzzle.mead.io/puzzle
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000 // это для запуска на heroku, выдаёт порт чеерз переменные среды
+
+// console.log(process.env) // все переменные среды
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')

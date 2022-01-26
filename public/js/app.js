@@ -13,6 +13,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
+    // обращение к текущему домену (без всяких localhost)
     fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
