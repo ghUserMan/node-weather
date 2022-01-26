@@ -20,6 +20,8 @@ app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
 
 // Setup static directory to serve
+// для поиска используется сначала то что в статике, потом пути описанные руками, потом всё остальное
+
 app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
@@ -58,12 +60,12 @@ app.get('/weather', (req, res) => {
 
         forecast(latitude, longitude, (error, forecastData) => {
             if (error) {
-                return res.send({ error })
+                return res.send({ error }) // создаётся объект вида {error: error} 
             }
 
             res.send({
                 forecast: forecastData,
-                location,
+                location, // короткая запись
                 address: req.query.address
             })
         })
