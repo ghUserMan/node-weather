@@ -41,3 +41,6 @@ Creating ⬢ apatiy-kirov-node-weather... done
 https://apatiy-kirov-node-weather.herokuapp.com/ | https://git.heroku.com/apatiy-kirov-node-weather.git
 
 C:\WORK\node\the-complete-node-js\web-server>
+
+Запуск нодмаан с реагированием на изменение конкретных типов файлов
+nodemon src/app.js -e js,hbs,css,html
